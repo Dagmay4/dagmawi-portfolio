@@ -347,6 +347,13 @@
     line-height: 1.7;
   }
 
+  .timeline-bullets { list-style: none; max-width: 620px; margin: 0.75rem 0; }
+  .timeline-bullets li { position: relative; padding-left: 1.1rem; margin-bottom: 0.5rem; font-size: 15px; color: var(--ink-soft); line-height: 1.65; }
+  .timeline-bullets li::before { content: '→'; position: absolute; left: 0; color: var(--terracotta); }
+  .timeline-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 0.75rem; }
+  .timeline-item.current::before { background: var(--moss); box-shadow: 0 0 0 4px var(--moss-light); }
+  .timeline-item.current .timeline-date { color: var(--moss); }
+
   /* IMPACT SECTION */
   .impact-bg {
     background: var(--ink);
@@ -601,7 +608,7 @@
         <div class="stat-card">
           <div class="stat-icon gold">📊</div>
           <div>
-            <div class="stat-num">6+</div>
+            <div class="stat-num">7+</div>
             <div class="stat-label">Years in M&amp;E &amp; Project Management</div>
           </div>
         </div>
@@ -623,7 +630,7 @@
   <h2 class="section-title">Turning field data into<br>decisions that matter</h2>
   <div class="about-grid">
     <div class="about-text">
-      <p>I'm a Monitoring, Evaluation &amp; Learning specialist who has spent over six years working at the intersection of field operations and strategic insight — at organizations like FAO, IIE, and GIZ, across Ethiopia and beyond.</p>
+      <p>I'm a Monitoring, Evaluation &amp; Learning specialist who has spent over seven years working at the intersection of field operations and strategic insight — at organizations like FAO, IIE, and GIZ, across Ethiopia and beyond.</p>
       <p>My edge is bridging the gap between on-the-ground implementation and evidence-based decision-making. Whether that means designing a digital data collection system for desert locust response, leading end-of-project evaluations, or training teams on PMEL frameworks, I deliver work that makes programs more accountable and more impactful.</p>
       <p>I've also built a track record as a trainer — delivering M&amp;E courses to institutions and individuals across sectors, including a recent PMEL training for Cheshire Ethiopia and Liliane Foundation.</p>
       <div class="skills-list">
@@ -639,6 +646,9 @@
         <span class="skill-pill">Project Coordination</span>
         <span class="skill-pill">Environmental Impact Assessment</span>
         <span class="skill-pill">AI Tools</span>
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">Streamlit</span>
+        <span class="skill-pill">Automation</span>
       </div>
       <p style="font-size: 13px; color: var(--ink-muted); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; margin: 2rem 0 0.75rem;">Sectors worked across</p>
       <div class="skills-list">
@@ -678,6 +688,26 @@
     <p class="section-eyebrow">Career</p>
     <h2 class="section-title">Where I've worked</h2>
     <div class="timeline">
+
+      <div class="timeline-item current">
+        <div class="timeline-date">Aug 2025 – Present</div>
+        <div class="timeline-role">Independent Practice: AI, Automation &amp; Data Solutions</div>
+        <div class="timeline-org-row"><div class="timeline-org">Self-directed &amp; contractual work · Addis Ababa</div></div>
+        <div class="timeline-desc">A focused chapter combining my M&amp;E expertise with AI and automation, building tools that make people and organizations more efficient.</div>
+        <ul class="timeline-bullets">
+          <li><strong>Contractual automation work:</strong> building automations and operationalizing workflows for companies and personnel.</li>
+          <li><strong>Optimization dashboards &amp; interfaces:</strong> designing dashboards that track and improve efficiency for teams and organizations, including Python and Streamlit-based models.</li>
+          <li><strong>Personal project, M&amp;E application:</strong> building an application that carries out a range of monitoring and evaluation activities.</li>
+          <li><strong>Advancing AI knowledge:</strong> taking courses and building hands-on AI work alongside client projects.</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">Streamlit</span>
+          <span class="skill-pill">Automation</span>
+          <span class="skill-pill">Dashboards</span>
+          <span class="skill-pill">AI</span>
+        </div>
+      </div>
 
       <div class="timeline-item">
         <div class="timeline-date">Jul 2025 – Aug 2025</div>
@@ -807,7 +837,17 @@
       <div class="tool-name">IPC / E-Locust</div>
       <div class="tool-cat">Field systems</div>
     </div>
-  </div>
+      <div class="tool-card">
+      <span class="tool-icon">🐍</span>
+      <div class="tool-name">Python</div>
+      <div class="tool-cat">Analysis &amp; automation</div>
+    </div>
+    <div class="tool-card">
+      <span class="tool-icon">📈</span>
+      <div class="tool-name">Streamlit</div>
+      <div class="tool-cat">Dashboards &amp; apps</div>
+    </div>
+</div>
 </section>
 
 <!-- EDUCATION -->
@@ -882,7 +922,7 @@
 </section>
 
 <footer>
-  <span>© 2025 Dagmawi Tadesse</span>
+  <span>© 2026 Dagmawi Tadesse</span>
   <span>Addis Ababa, Ethiopia · Open to international opportunities</span>
 </footer>
 
